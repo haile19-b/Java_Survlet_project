@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 public class DBConnection {
 
     private static final String URL =
-        "jdbc:mysql://mysql-3a2703a4-yesexample972-d326.i.aivencloud.com:18606/defaultdb?sslMode=VERIFY_CA&sslCa=classpath:aiven-ca.pem";
+        "jdbc:mysql://mysql-3a2703a4-yesexample972-d326.i.aivencloud.com:18606/defaultdb?useSSL=true&requireSSL=true&verifyServerCertificate=false";
 
-    private static final String USER = "YOUR_USERNAME";
-    private static final String PASSWORD = "YOUR_PASSWORD";
+    private static final String USER = "avnadmin";
+    private static final String PASSWORD = "AVNS_iR9-k9dCl2uCV1sO9uI";
 
     public static Connection getConnection() {
         Connection conn = null;
